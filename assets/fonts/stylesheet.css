@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Ligaturess Serif Trial';
+    src: url('LigaturessSerifTrial-Bold.eot');
+    src: url('LigaturessSerifTrial-Bold.eot?#iefix') format('embedded-opentype'),
+        url('LigaturessSerifTrial-Bold.woff2') format('woff2'),
+        url('LigaturessSerifTrial-Bold.woff') format('woff'),
+        url('LigaturessSerifTrial-Bold.ttf') format('truetype'),
+        url('LigaturessSerifTrial-Bold.svg#LigaturessSerifTrial-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ligaturess Serif Trial';
+    src: url('LigaturessSerifTrial-Medium.eot');
+    src: url('LigaturessSerifTrial-Medium.eot?#iefix') format('embedded-opentype'),
+        url('LigaturessSerifTrial-Medium.woff2') format('woff2'),
+        url('LigaturessSerifTrial-Medium.woff') format('woff'),
+        url('LigaturessSerifTrial-Medium.ttf') format('truetype'),
+        url('LigaturessSerifTrial-Medium.svg#LigaturessSerifTrial-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ligaturess Serif Trial';
+    src: url('LigaturessSerifTrial-Semibold.eot');
+    src: url('LigaturessSerifTrial-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('LigaturessSerifTrial-Semibold.woff2') format('woff2'),
+        url('LigaturessSerifTrial-Semibold.woff') format('woff'),
+        url('LigaturessSerifTrial-Semibold.ttf') format('truetype'),
+        url('LigaturessSerifTrial-Semibold.svg#LigaturessSerifTrial-Semibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ligaturess Serif Trial';
+    src: url('LigaturessSerifTrial-Regular.eot');
+    src: url('LigaturessSerifTrial-Regular.eot?#iefix') format('embedded-opentype'),
+        url('LigaturessSerifTrial-Regular.woff2') format('woff2'),
+        url('LigaturessSerifTrial-Regular.woff') format('woff'),
+        url('LigaturessSerifTrial-Regular.ttf') format('truetype'),
+        url('LigaturessSerifTrial-Regular.svg#LigaturessSerifTrial-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ligaturess Serif Trial';
+    src: url('LigaturessSerifTrial-Light.eot');
+    src: url('LigaturessSerifTrial-Light.eot?#iefix') format('embedded-opentype'),
+        url('LigaturessSerifTrial-Light.woff2') format('woff2'),
+        url('LigaturessSerifTrial-Light.woff') format('woff'),
+        url('LigaturessSerifTrial-Light.ttf') format('truetype'),
+        url('LigaturessSerifTrial-Light.svg#LigaturessSerifTrial-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+

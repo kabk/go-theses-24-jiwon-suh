@@ -1,0 +1,326 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'LigaturessSerif';
+    src: url('../fonts/LigaturessSerifTrial-Light.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/LigaturessSerifTrial-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/LigaturessSerifTrial-Light.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/LigaturessSerifTrial-Light.woff') format('woff'), /* Pretty Modern Browsers */
+        url('../fonts/LigaturessSerifTrial-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+        url('../fonts/LigaturessSerifTrial-Light.svg#svgFontName') format('svg'); /* Legacy iOS */
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'LigaturessSerif';
+    src: url('../fonts/LigaturessSerifTrial-Regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/LigaturessSerifTrial-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/LigaturessSerifTrial-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/LigaturessSerifTrial-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+        url('../fonts/LigaturessSerifTrial-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+        url('../fonts/LigaturessSerifTrial-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'LigaturessSerif';
+    src: url('../fonts/LigaturessSerifTrial-Medium.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/LigaturessSerifTrial-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/LigaturessSerifTrial-Medium.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/LigaturessSerifTrial-Medium.woff') format('woff'), /* Pretty Modern Browsers */
+        url('../fonts/LigaturessSerifTrial-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+        url('../fonts/LigaturessSerifTrial-Medium.svg#svgFontName') format('svg'); /* Legacy iOS */
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'LigaturessSerif';
+    src: url('../fonts/LigaturessSerifTrial-Semibold.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/LigaturessSerifTrial-Semibold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/LigaturessSerifTrial-Semibold.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/LigaturessSerifTrial-Semibold.woff') format('woff'), /* Pretty Modern Browsers */
+        url('../fonts/LigaturessSerifTrial-Semibold.ttf')  format('truetype'), /* Safari, Android, iOS */
+        url('../fonts/LigaturessSerifTrial-Semibold.svg#svgFontName') format('svg'); /* Legacy iOS */
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'LigaturessSerif';
+    src: url('../fonts/LigaturessSerifTrial-Bold.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/LigaturessSerifTrial-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/LigaturessSerifTrial-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/LigaturessSerifTrial-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+        url('../fonts/LigaturessSerifTrial-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+        url('../fonts/LigaturessSerifTrial-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+    font-weight: 700;
+}
+
+
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(246, 60, 60);
+    border-radius: 0px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+body {
+    background-color: white;
+    overflow: hidden;
+    /* border-left: 30px rgb(246, 60, 60) solid;
+    border-right: 30px rgb(246, 60, 60) solid;
+    border-top: 10px rgb(246, 60, 60) solid;
+    border-bottom: 10px rgb(246, 60, 60) solid; */
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+}
+
+
+#left {
+    overflow: hidden;
+    padding: 50px;
+    /* border: 0.9px rgb(246, 60, 60) solid; */
+    /* margin: 30px 0px 30px 30px; */
+    border-radius: 30px 15px 15px 30px;
+    /* border-radius: 10px 30px 30px 10px; */
+    background-color: white;
+}
+
+#center {
+    margin: 30px 30px 30px 0px;
+    padding: 60px;
+    border: 1px rgb(246, 60, 60) solid;
+    border-radius: 15px 33px 33px 15px;
+    font-family: 'LigaturessSerif';
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    background-color: white;
+    /* scroll-snap-type: y mandatory; */
+    /* border-left: 0.9px rgb(246, 60, 60) solid; */
+    /* box-shadow: 5px 5px 10px rgb(246, 60, 60, 0.3); */
+}
+
+#coverdetails {
+    text-indent: 0;
+}
+
+a {
+    font-family: 'LigaturessSerif';
+    font-weight: light;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    text-indent: 1rem;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: overline underline 0.8px rgb(246, 60, 60) solid;
+    /* color: rgb(246, 60, 60); */
+}
+
+#subtitle {
+    color: rgb(186, 186, 186);
+    font-size: 0.6rem;
+    text-indent: 0;
+
+}
+
+#right {
+    overflow: hidden;
+    /* padding: 50px; */
+    /* border: 0.9px rgb(246, 60, 60) solid; */
+    /* margin: 30px 0px 30px 30px; */
+    border-radius: 30px 15px 15px 30px;
+    /* border-radius: 10px 30px 30px 10px; */
+    background-color: white;
+}
+
+h1 {
+    /* text-align: center; */
+    font-size: 3.5rem;
+    -webkit-text-stroke: 1.3px rgb(246, 60, 60);
+    /* text-shadow: 5px 5px 10px rgb(246, 60, 60, 0.3); */
+    color: white;
+    /* color:rgb(246, 60, 60); */
+    font-family: 'LigaturessSerif';
+    font-weight: 500;
+    /* padding-top: 7rem;
+    padding-bottom: 7rem; */
+}
+
+
+h2 {
+    font-family: 'LigaturessSerif';
+    font-weight: 400;
+    padding: 1rem 0;
+    font-size: 1.1rem;
+    text-decoration: overline underline 0.8px rgb(246, 60, 60) solid
+}
+
+
+p {
+    text-indent: 1rem;
+    font-family: 'LigaturessSerif';
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    text-indent: 1rem;
+}
+
+.imagebox {
+    /* border: 1px red solid; */
+    max-width: 800px;
+    height: 500px;
+    text-align: center;
+    /* overflow: hidden; */
+    margin: 0 auto;
+}
+
+.imagebox img {
+    width: 60%; /* Make the images fill the width of the container */
+    height: 100%; /* Make the images fill the height of the container */
+    object-fit: cover; /* Maintain the aspect ratio while covering the container */
+}
+
+#reveal {
+    transition: transform 0.3s ease;
+}
+
+#reveal:hover {
+    transform: scale(1.6);
+}
+
+/* #reveal1, #reveal2 {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+} */
+
+/* .reveal-figcap {
+    position: absolute;
+} */
+
+.visible {
+    opacity: 0.5;
+}
+
+figcaption {
+    font-size: 10px;
+    color: rgb(246, 60, 60);
+}
+
+
+ul {
+    list-style-type: none;
+    text-indent: 0.5rem;
+    font-family: 'LigaturessSerif';
+    font-weight: 400;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    padding: 0;
+    text-align: left;
+
+}
+
+li {
+    margin-bottom: 14px;
+}
+
+
+
+
+
+.styled-quote {
+    /* background-color: #f8f8f8; */
+    /* border-left: 4px solid #333; */
+    padding: 15px;
+    margin: 20px;
+  }
+  
+  .styled-quote p {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-family: 'LigaturessSerif';
+    font-style: italic;
+    line-height: 1.8rem;
+    text-align: center;
+  }
+  
+  .styled-quote cite {
+    font-size: 1.1rem;
+    display: block;
+    font-family: 'LigaturessSerif';
+    font-style: italic;
+    text-align: center;
+    /* margin-left: 200px; */
+  }
+
+
+
+
+
+
+
+
+
+
+
+  
+html {
+    font: var(--font-size) var(--font-family);
+    color: var(--color-text);
+    background-color: var(--color-background);
+  }
+
+nav {
+    padding-top: 5rem;
+}
+
+
+
+main {
+    margin: 10rem;
+}
+
+main > article > section > p {
+    text-indent: 1rem;
+}
+
+main > article > section > p:first-of-type {
+    text-indent: 0rem;
+}
+
+
+.author-name {
+    width: auto;
+    margin: 0 auto;
+}
+
+blockquote {
+    margin: 1rem 25%;
+}
+
+blockquote + p {
+    text-indent: 0rem!important;
+}
+
+.centered-images {
+    margin: 1rem 10%;
+}
+
+figure > figcaption > p:first-child {
+    text-indent: 0rem;
+}
