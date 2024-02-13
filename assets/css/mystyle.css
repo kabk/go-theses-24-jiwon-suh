@@ -2,7 +2,7 @@
 
 @media only screen and (max-width: 767px) {
     .column#left {
-      display: none;
+        display: none;
     }
 
     .column#right {
@@ -10,7 +10,8 @@
       }
   
     .column#center {
-      width: 100%;
+        background-color: #ffcc00;
+        width: 100%;
     }
   }
 
