@@ -1,10 +1,18 @@
 @charset "UTF-8";
 
 @media only screen and (max-width: 767px) {
+    .column#left {
+      display: none;
+    }
+
+    .column#right {
+        display: none;
+      }
+  
     .column#center {
       width: 100%;
     }
-}
+  }
 
 
 @font-face {
