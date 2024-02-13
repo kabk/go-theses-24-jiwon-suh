@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+@media only screen and (max-width: 767px) {
+    .column#center {
+      width: 100%;
+    }
+}
+
+
 @font-face {
     font-family: 'LigaturessSerif';
     src: url('../fonts/LigaturessSerifTrial-Light.eot'); /* IE9 Compat Modes */
