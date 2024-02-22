@@ -10,15 +10,17 @@
       }
   
     .column#center {
-        background-color: #ffcc00;
         width: 100%;
     }
 
     .container {
         background-color: #ffcc00;
         width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-  }
+}
 
 
 @font-face {
