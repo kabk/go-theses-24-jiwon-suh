@@ -1,27 +1,5 @@
 @charset "UTF-8";
 
-@media only screen and (max-width: 767px) {
-    .column#left {
-        display: none;
-    }
-
-    .column#right {
-        display: none;
-      }
-  
-    .column#center {
-        width: 100%;
-    }
-
-    .container {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-
 @font-face {
     font-family: 'LigaturessSerif';
     src: url('../fonts/LigaturessSerifTrial-Light.eot'); /* IE9 Compat Modes */
@@ -76,7 +54,49 @@
     font-weight: 700;
 }
 
+@font-face {
+    font-family: 'symphonypro';
+    src: url('../fonts/SymphonyPro-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/SymphonyPro-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+        url('../fonts/SymphonyPro-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+    font-weight: 400;
+}
 
+@font-face {
+    font-family: 'PP Editorial New';
+    src: url('PPEditorialNew-Italic.woff2') format('woff2'),
+        url('PPEditorialNew-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@media only screen and (max-width: 767px) {
+    .column#left {
+        display: none;
+    }
+
+    .column#right {
+        display: none;
+    }
+  
+    #center {
+        width: 100%;
+        max-width: 600px;
+        overflow: scroll;
+        padding: 20px; 
+    }
+
+    .container {
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        overflow-x: hidden;
+    }
+}
 
 ::-webkit-scrollbar {
     width: 5px;
@@ -93,7 +113,7 @@
 
 body {
     background-color: white;
-    overflow: hidden;
+    /* overflow: hidden; */
     /* border-left: 30px rgb(246, 60, 60) solid;
     border-right: 30px rgb(246, 60, 60) solid;
     border-top: 10px rgb(246, 60, 60) solid;
@@ -128,11 +148,63 @@ body {
     border-radius: 15px 33px 33px 15px;
     font-family: 'LigaturessSerif';
     overflow-y: auto;
+    overflow: auto;
     scroll-behavior: smooth;
     background-color: white;
     /* scroll-snap-type: y mandatory; */
     /* border-left: 0.9px rgb(246, 60, 60) solid; */
     /* box-shadow: 5px 5px 10px rgb(246, 60, 60, 0.3); */
+}
+
+/* .centerimage:hover {
+    border: 1px rgb(246, 60, 60) solid;
+} */
+
+.centerimage {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+}
+
+.image-container img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid transparent;
+}
+
+.image-container img:hover {
+    border-color: rgb(246, 60, 60);
+}
+
+.image-container img:hover + .figcap {
+    text-decoration: overline underline;
+}
+
+.figcap:hover {
+    text-decoration: overline underline;
+}
+
+.figcap:hover + .image-container img {
+    border: 1px solid rgb(246, 60, 60);
+}
+
+.figcap {
+    text-align: center;
+    padding-top: 7px;
+    border-bottom: 2px solid transparent;
+}
+
+
+.figlabel {
+    font-family: 'PP Editorial New';
+    font-style: italic;
 }
 
 #coverdetails {
@@ -270,7 +342,7 @@ li {
     /* border-left: 4px solid #333; */
     padding: 15px;
     margin: 20px;
-  }
+}
   
   .styled-quote p {
     font-size: 1.5rem;
@@ -345,4 +417,42 @@ blockquote + p {
 
 figure > figcaption > p:first-child {
     text-indent: 0rem;
+}
+
+
+
+.image-anchor {
+    color: red;
+}
+
+
+#left, #right {
+    position: relative;
+}
+.imagebox > div {
+    position: absolute;
+    left: 50%;
+    translate: -50% 0;
+    display: none;
+}
+
+.imagebox > div.top {
+    top: 1rem;
+}
+.imagebox > div.center {
+    top: 50%;
+    translate: -50% -50%;
+}
+.imagebox > div.bottom {
+    bottom: 1rem;
+}
+
+.imagebox > div.visible {
+    animation: fadeIn 2.5s forwards;
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {  opacity: 0 }
+    to {  opacity: 1 }
 }
