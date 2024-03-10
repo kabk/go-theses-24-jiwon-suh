@@ -40,3 +40,30 @@ const toggleVisibleImages = event => {
     } );
 }
 contentColumn.addEventListener( 'scroll', toggleVisibleImages );
+
+
+
+function toggleDivVisibility() {
+    console.log("Window width:", window.innerWidth);
+
+    var yourDivs = document.querySelectorAll('.image-container');
+
+    // Loop through each matching element
+    yourDivs.forEach(function(div) {
+      if (window.innerWidth <= 767) {
+        console.log("Showing the div");
+        div.style.display = "block";
+      } else {
+        console.log("Hiding the div");
+        div.style.display = "none";
+      }
+    });
+  }
+
+  document.addEventListener("DOMContentLoaded", function() {
+    // Initial call to set the initial state based on window width
+    toggleDivVisibility();
+
+    // Attach the function to the window resize event
+    window.addEventListener("resize", toggleDivVisibility);
+  });
